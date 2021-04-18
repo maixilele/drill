@@ -22,6 +22,12 @@ android {
         }
     }
 
+<<<<<<< HEAD
+=======
+    dataBinding {
+        enabled = true  //ActivityMainBinding    DataBinding
+    }
+>>>>>>> 299a62cd9dcc8d94bf5e7cdf0fc0755e70e352e6
 }
 
 dependencies {
@@ -33,4 +39,5 @@ dependencies {
     androidTestImplementation dep.espresso
     implementation project(path: ':core')
     implementation project(path: ':common')
+    implementation project(path: ':resource')
 }
