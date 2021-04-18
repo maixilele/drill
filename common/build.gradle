@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+def dep=rootProject.ext.dependencies;
 
 android {
     compileSdkVersion 30
@@ -31,4 +32,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    api dep.gson
+    api dep.retrofit
+    api dep.retrofitgson
+    api dep.retrofitrxjava
 }

@@ -1,0 +1,48 @@
+apply from : "gradles/Version.gradle"
+
+def version=rootProject.ext.dependenciesVersion
+
+ext{
+    android=[
+
+    ]
+
+    dependencies=[
+            corektx:"androidx.core:core-ktx:${version.corektx}",
+            appcompat: "androidx.appcompat:appcompat:${version.appcompat}",
+            constraintlayout: "androidx.constraintlayout:constraintlayout:${version.constraintlayout}",
+            junit: "junit:junit:${version.junit}",
+            ext:"androidx.test.ext:junit:${version.ext}",
+            espresso :"androidx.test.espresso:espresso-core:${version.espresso}",
+
+
+            retrofit:"com.squareup.retrofit2:retrofit:$version.retrofit",
+            retrofitgson:"com.squareup.retrofit2:converter-gson:$version.retrofitgson",
+            retrofitrxjava:"com.squareup.retrofit2:adapter-rxjava2:$version.retrofitrxjava",
+            okhttplog:"com.squareup.okhttp3:logging-interceptor:$version.okhttplog",
+            gson:"com.google.code.gson:gson:$version.gson",
+            rxandroid:"io.reactivex.rxjava2:rxandroid:$version.rxandroid",
+            rxjava:"io.reactivex.rxjava2:rxjava:$version.rxjava",
+            rxbinding:"com.jakewharton.rxbinding2:rxbinding:$version.rxbinding",
+
+            retrofitcoroutines:"com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$version.retrofitcoroutines",
+
+            autodisposearchcomponents:"com.uber.autodispose:autodispose-android-archcomponents:$version.autodisposearchcomponents",
+            autodispose:"com.uber.autodispose:autodispose-android:$version.autodispose",
+            glide:"com.github.bumptech.glide:glide:$version.glide",
+            disklru:"com.jakewharton:disklrucache:$version.disklru",
+
+            roomruntime : "androidx.room:room-runtime:$version.room_version",
+            roomcompiler : "androidx.room:room-compiler:$version.room_version"
+
+    ]
+
+    urls=[
+            offline:"http://39.100.125.37:8088/",
+            online:"http://39.100.125.37:8088/"
+    ]
+
+    verifyCode=[
+            serverCode:"671ef14f13b17312d11b14d1621411ab1d619c18010916c1"
+    ]
+}
