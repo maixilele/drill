@@ -33,4 +33,5 @@ dependencies {
     implementation project(path: ':core')
     implementation project(path: ':common')
     implementation project(path: ':resource')
+    implementation project(path: ':slide')
 }
