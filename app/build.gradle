@@ -26,12 +26,19 @@ android {
         enabled = true  //ActivityMainBinding    DataBinding
     }
 
+    sourceSets{
+        main{
+            jniLibs.srcDirs=['libs']
+        }
+    }
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation dep.appcompat
     implementation dep.constraintlayout
+    implementation files('libs\\AMap3DMap_7.6.0_AMapNavi_7.6.0_AMapSearch_7.6.0_AMapTrack_1.3.0_AMapLocation_5.2.0_20200915.jar')
     testImplementation dep.junit
     androidTestImplementation dep.ext
     androidTestImplementation dep.espresso
